@@ -18,4 +18,13 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  */
 module.exports = {
   solidity: "0.8.4",
-};
+  networks: {
+    rinkeby: {
+      url: process.env.STAGING_ALCHEMY_KEY,
+      accounts: [process.env.PRIVATE_KEY]
+    },
+  },
+};  
+
+// Command to run: npx hardhat run scripts/deploy.js --network rinkeby
+// WavePortal address: 0x948309042f997cf4f6C6C1125ab25151394C7ff1
