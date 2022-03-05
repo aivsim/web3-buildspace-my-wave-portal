@@ -13,3 +13,5 @@ npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
 ```
+
+Reference code: https://gist.github.com/adilanchian/93fbd2e06b3b5d3acb99b5723cebd925
